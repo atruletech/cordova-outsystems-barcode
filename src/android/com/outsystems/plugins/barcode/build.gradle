@@ -12,9 +12,9 @@ buildscript {
 repositories {
     google()
     mavenCentral()
-    repositories {
-        maven { url 'https://pkgs.dev.azure.com/OutSystemsRD/9e79bc5b-69b2-4476-9ca5-d67594972a52/_packaging/PublicArtifactRepository/maven/v1' }
-    }
+    // repositories {
+    //     maven { url 'https://pkgs.dev.azure.com/OutSystemsRD/9e79bc5b-69b2-4476-9ca5-d67594972a52/_packaging/PublicArtifactRepository/maven/v1' }
+    // }
 }
 
 repositories{
@@ -29,7 +29,8 @@ apply plugin: 'kotlin-kapt'
 dependencies {
     implementation("com.github.outsystems:oscore-android:1.2.0@aar")
     implementation("com.github.outsystems:oscordova-android:2.0.0@aar")
-    implementation("com.github.outsystems:osbarcode-android:1.1.2@aar")
+    // implementation("com.github.outsystems:osbarcode-android:1.1.2@aar")
+    implementation(name = "OSBarcodeLib", ext = "aar")
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation "androidx.activity:activity-ktx:1.4.0"
